@@ -1,0 +1,6 @@
+[run]
+omit =
+    koohii/__main__.py
+    venv/*
+    tests/*
+    setup.py
