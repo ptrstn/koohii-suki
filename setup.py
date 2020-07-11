@@ -21,12 +21,12 @@ def find_version(*file_paths):
 
 
 setup(
-    name="koohii-crawler",
+    name="koohii-scraper",
     version=find_version("koohii", "__init__.py"),
-    url="http://github.com/ptrstn/koohii-crawler",
+    url="http://github.com/ptrstn/koohii-scraper",
     author="Peter Stein",
     license="MIT",
     packages=["koohii"],
-    install_requires=[],
+    install_requires=["requests"],
     entry_points={"console_scripts": ["koohii=koohii.__main__:main"]},
 )
