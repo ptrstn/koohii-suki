@@ -4,7 +4,7 @@
 
 # Koohii-Suki
 
-A python package to retrieve information from [Kanji Koohii](https://kanji.koohii.com/).
+A python package to retrieve stories from [Kanji Koohii](https://kanji.koohii.com/).
 
 ## Installation
 

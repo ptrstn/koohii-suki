@@ -32,6 +32,6 @@ setup(
     author="Peter Stein",
     license="MIT",
     packages=["koohii"],
-    install_requires=["requests", "beautifulsoup4", "pandas"],
+    install_requires=["requests", "beautifulsoup4", "pandas", "bugmenot"],
     entry_points={"console_scripts": ["koohii=koohii.__main__:main"]},
 )
