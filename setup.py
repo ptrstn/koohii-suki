@@ -20,13 +20,18 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
-    name="koohii-scraper",
+    name="koohii-suki",
     version=find_version("koohii", "__init__.py"),
-    url="http://github.com/ptrstn/koohii-scraper",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="http://github.com/ptrstn/koohii-suki",
     author="Peter Stein",
     license="MIT",
     packages=["koohii"],
-    install_requires=["requests"],
+    install_requires=["requests", "beautifulsoup4", "pandas"],
     entry_points={"console_scripts": ["koohii=koohii.__main__:main"]},
 )
