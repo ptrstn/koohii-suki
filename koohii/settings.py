@@ -12,4 +12,4 @@ REQUEST_HEADERS = {
 }
 
 CSV_FILE_NAME = "kanji-koohii-stories.csv"
-SECONDS_TO_WAIT = 1.5
+SECONDS_TO_WAIT = 1.8
