@@ -3,7 +3,8 @@ import re
 
 import requests
 
-USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0"
+from koohii.settings import REQUEST_HEADERS
+
 KANJI_KOHII_WORDS_URL = "https://kanji.koohii.com/revtk/study/keywords-rtk-1.js"
 
 
@@ -20,8 +21,7 @@ def _extract_kanji_list(text):
 
 
 def get_kanji_word_list(url=KANJI_KOHII_WORDS_URL):
-    headers = {"User-Agent": USER_AGENT}
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=REQUEST_HEADERS)
     response.raise_for_status()
 
     response_text = response.text.replace("\n", "")
